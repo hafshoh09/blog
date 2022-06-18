@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->integer('kategori_id');
             $table->string("judul_artikel");
             $table->text("isi_artikel");
-            $table->text("konten");
+            $table->text("image");
             $table->string("slug");
             $table->timestamps();
         });
