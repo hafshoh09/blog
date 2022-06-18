@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Http\Models\Kategori;
+use App\Models\Kategori;
 class Post extends Model
 {
     use HasFactory;
     public function kategori()
     {
-        return $this->hasMany(Kategori::class);
+        return $this->belongsTo(Kategori::class);
     }
 }

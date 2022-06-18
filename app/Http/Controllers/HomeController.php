@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Models\Post;
+use App\Models\Post;
 class HomeController extends Controller
 {
 
@@ -14,7 +14,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data['post'] = Post::all();
+        $data['post'] = Post::latest()->paginate(3);
         return view('welcome', $data);
     }
 }
