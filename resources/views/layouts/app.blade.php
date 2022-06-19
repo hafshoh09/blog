@@ -16,9 +16,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('dist/css/style.min.css')}}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 
@@ -86,6 +84,43 @@
         </main>
     </div>
     <script src="{{ asset('js/myjs.js') }}"></script>
+
+    <script src="{{asset('assets/node_modules/jquery/jquery-3.2.1.min.js')}}"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="{{asset('assets/node_modules/popper/popper.min.js')}}"></script>
+    <script src="{{asset('assets/node_modules/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="{{ asset('dist/js/perfect-scrollbar.jquery.min.js')}}"></script>
+    <!--Wave Effects -->
+    <script src="{{ asset('dist/js/waves.js')}}"></script>
+    <!--Menu sidebar -->
+    <script src="{{ asset('dist/js/sidebarmenu.js')}}"></script>
+    <!--stickey kit -->
+    <script src="{{asset('assets/node_modules/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
+    <script src="{{asset('assets/node_modules/sparkline/jquery.sparkline.min.js')}}"></script>
+    <!--Custom JavaScript -->
+    <script src="{{ asset('dist/js/custom.min.js')}}"></script>
+
+    <script src="{{ asset('assets/node_modules/tinymce/tinymce.min.js')}}"></script>
+    <script>
+        $(document).ready(function() {
+
+            if ($("#mymce").length > 0) {
+                tinymce.init({
+                    selector: "textarea#mymce",
+                    theme: "modern",
+                    height: 300,
+                    plugins: [
+                        "advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
+                        "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                        "save table contextmenu directionality emoticons template paste textcolor"
+                    ],
+                    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons",
+
+                });
+            }
+        });
+        </script>
 </body>
 
 </html>

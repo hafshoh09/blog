@@ -17,4 +17,8 @@ class HomeController extends Controller
         $data['post'] = Post::latest()->paginate(3);
         return view('welcome', $data);
     }
+    public function viewPost($slug){
+        $data['post'] = Post::where('slug', $slug)->first();
+        return view('viewPost', $data);
+    }
 }

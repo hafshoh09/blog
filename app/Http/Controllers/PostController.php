@@ -48,7 +48,7 @@ class PostController extends Controller
         $imageName = time().'.'.$request->image->extension();
 
         $request->image->move(public_path('images'), $imageName);
-        Post::insert([
+        Post::create([
             'judul_artikel' => $request->judul_artikel,
             'kategori_id' => $request->kategori,
             'isi_artikel' => $request->isi_artikel,

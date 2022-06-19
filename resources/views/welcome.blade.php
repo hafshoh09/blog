@@ -23,8 +23,8 @@
                                 </div>
                             </div>
                             <div class="btn-wrapper">
-                                <a href="" class="btn btn-primary"
-                                    data-src="https://source.unsplash.com/collection/190727/900x600">tampil</a>
+                                <a href="{{ url('viewPost') }}/{{ $row->slug }}" class="btn btn-primary"
+                                    >Tampil</a>
                             </div>
                         </div>
                     </div>

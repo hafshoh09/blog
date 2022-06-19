@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
     <!-- Column -->
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-3 col-6 col-md-6">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Users</h5>
@@ -16,7 +16,7 @@
         </div>
     </div>
     <!-- Column -->
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-3 col-6 col-md-6">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Kategori</h5>
@@ -29,7 +29,7 @@
         </div>
     </div>
     <!-- Column -->
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-3 col-6 col-md-6">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Post</h5>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <!-- Column -->
-    <div class="col-lg-3 col-md-6">
+    <div class="col-lg-3 col-6 col-md-6">
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Kategori</h5>

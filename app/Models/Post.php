@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Kategori;
 class Post extends Model
 {
+    protected $guarded = [];
     use HasFactory;
     public function kategori()
     {
