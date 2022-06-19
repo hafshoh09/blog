@@ -41,6 +41,7 @@
 
                         <h4>Komentar</h4>
                         <textarea id="mymce" name="isi_artikel" value="{{ old('isi_artikel') }}" class="form-control @error('isi_artikel') is-invalid @enderror"></textarea>
+                        <a href="" class="btn btn-primary pull-right mt-2">Kirim</a>
                     </div>
                 </div>
             </div>
