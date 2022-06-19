@@ -10,14 +10,17 @@
                     <div class="card mb-2">
                         <div class="inner-card mx-3">
                             <div class="img-wrapper">
-                                <img src="https://source.unsplash.com/collection/190727/900x600" alt="">
+                                <img src="{{ asset('images') }}/{{ $row->image }}" alt="">
                             </div>
                             <div class="content">
                                 <h1>{{ $row->judul_artikel }}</h1>
                                 <p>Kategori : {{ $row->kategori->nama_kategori }}</p>
                                 <p>Published at : {{ $row->created_at }}</p>
-                                <p style="height: 125px; width:100%;overflow:hidden;text-align: center">
-                                    {{ $row->isi_artikel }}</p>
+                                <div style="height: 45px; width:100%;overflow:hidden;text-align: center">
+
+                                    <p style="">
+                                        {!! $row->isi_artikel !!}</p>
+                                </div>
                             </div>
                             <div class="btn-wrapper">
                                 <a href="" class="btn btn-primary"
