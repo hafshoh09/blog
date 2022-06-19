@@ -4,7 +4,7 @@
     {{-- Artikel --}}
     <div class="wrapper">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-12">
                 <div class="container">
 
                     <div class="inner-wrapper mb-2 mt-3">
@@ -17,16 +17,6 @@
                                     {!! $post->isi_artikel !!}
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-2 mt-3 ">
-                <div class="container">
-
-                    <div class="card">
-                        <div class="card-body">
-                            Profil
                         </div>
                     </div>
                 </div>

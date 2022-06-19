@@ -42,6 +42,12 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
+                        <li class="nav-item">
+                            @foreach ($kategori as $row)
+
+                            <a class="nav-link" href="{{ route('register') }}">{{$row->nama_kategori}}</a>
+                            @endforeach
+                        </li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
